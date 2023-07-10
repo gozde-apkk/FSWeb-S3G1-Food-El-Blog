@@ -1,74 +1,111 @@
-/*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+}
 
 h1 {
   font-family: 'Gaegu', cursive;
   margin: 20px 0;
-  /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 10px;
+  font-size: 60px; 
+  text-align: center;/*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
+  
 }
 
 h2, h3, h4, h5, h6 {
   font-family: 'Gaegu', cursive;
   margin-bottom: 0;
   padding: 0 10px;
-  /*=======  Font size'ı 30px yapın*/
-  font-size: 10px;
+  font-size: 30px;/*=======  Font size'ı 30px yapın*/
+
 }
 
-/*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
-
-font-size: 16px;
-font-family: roboto;
-padding: 10px;
-line-height: 1.4;
-
-*/
+p{
+  font-size: 16px;
+  font-family: roboto;
+  padding: 10px;
+  line-height: 1.4;
+}
 
 
-/*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
-
+img {
   border-radius: 10px;
-
-*/
-
-.content-row {
+  width: 250px;
+  height: 100%;
+  align-self: center;
+  justify-content: center;
+}
+#banner {
   display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background-color: azure;
 }
 
-.content-row div {
-  /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
+
+#banner img{
+  width: 642px;
+  height: 156px;
 }
 
-.container {
-  /*======= width property yaratın. Değerini 750px olarak atayın */
-  margin: 0 auto;
+.navbar{
+  display: flex;
+  justify-content: center;
 }
 
-.container header nav a {
-  margin: 0 10px;
-  border: 1px solid lightgray;
-  padding: 20px;
-  display: inline-block;
-  border-radius: 20px;
-  color: white;
+.navbar a{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  margin-bottom: 20px;
-   /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
-  
+  font-size: 15px;
+  color: beige;
+  background-color: #E79947;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container header nav a:hover {
-/*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
+
+#about{
+  margin: 0px 347px;
 }
 
-/*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
-  margin-top: 20px;
-*/
+#menu{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 347px;
 
+}
+
+.content-row{
+  margin: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.content-row div{
+  margin: 20px;
+}
+
+#menu h2{
+  font-size: medium;
+}
 .contact-section {
+  display: flex;
   border-top: 1px dashed black;
   padding: 20px 0;
+  margin: 10px;
+  margin: 0px 347px;
+  flex-direction: column;
+
+}
+
+.contact-section ul li{
+  text-decoration: none;
 }
 
 .contact-section h2 {
@@ -76,47 +113,50 @@ line-height: 1.4;
   margin: 0 0 10px 0;
 }
 
-/*======= contact-section class'da address tag'i için aşağdıaki stilleri içeren bir selector yaratın:
-   line-height: 2;
-*/
-
 footer {
+  display: flex;
   width: 100%;
   background: #E79947;
   border-top: 1px dashed white;
+  
+}
+
+
+footer div h3{
+ margin:  2px -120px;;
+}
+
+
+
+footer nav {
+  display: flex;
+  margin: 16px -120px;
+  
 }
 
 footer .footer-content { 
   margin: 0 auto; 
-  /*======= width property yaratın. Değerini 750px olarak atayın */
+  width: 605px;/*======= width property yaratın. Değerini 605px olarak atayın */
   
 }
 
-footer .footer-content h3 {
-  padding: 0;
-  margin: 20px 0;
-}
 
-footer nav {
-  display: flex;
-}
-
-/*======= Footer'daki anchor tag için aşağıdaki stilleri içeren bir selector yaratın:
-  margin: 10px;
-  color: black;
-  text-decoration: underline;
-*/
-
+  
 
 footer nav a:first-child {
   margin-left: 0;
 }
 
-/*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:
-  color: white;
-*/
 
-footer .footer-content .copyright {
-  padding: 20px 0;
-   /*======= metni ortalayacak kodu yazın */
+.footer-content .copyright {
+  padding: 20px 20px;
+  margin: 0px 178px;
+   justify-content: center;/*======= metni ortalayacak kodu yazın */
+}
+
+
+.footer-content nav a{
+ margin: 22px;
+ color: black;
+ font-size: 20px;
 }
